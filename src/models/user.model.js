@@ -13,49 +13,49 @@ const userSchema = new mongoose.Schema(
         url: 'https://palcehold.co/600x400',
         localPath: '',
       },
-      username: {
-        type: String,
-        required: true,
-        unique: true,
-        lowercase: true,
-        index: true,
-        trim: true,
-      },
-      email: {
-        type: String,
-        required: true,
-        unique: true,
-        lowercase: true,
-        index: true,
-        trim: true,
-      },
-      fullName: {
-        type: String,
-        required: true,
-      },
-      password: {
-        type: String,
-        required: true,
-      },
-      isEmailVerified: {
-        type: Boolean,
-        default: true,
-      },
-      forgotPasswordToken: {
-        type: String,
-      },
-      forgotPasswordExpiry: {
-        type: Date,
-      },
-      refreshToken: {
-        type: String,
-      },
-      emailVerificationToken: {
-        type: String,
-      },
-      emailVerificationExpiry: {
-        type: Date,
-      },
+    },
+    username: {
+      type: String,
+      required: true,
+      unique: true,
+      lowercase: true,
+      index: true,
+      trim: true,
+    },
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+      lowercase: true,
+      index: true,
+      trim: true,
+    },
+    fullName: {
+      type: String,
+      required: true,
+    },
+    password: {
+      type: String,
+      required: true,
+    },
+    isEmailVerified: {
+      type: Boolean,
+      default: true,
+    },
+    forgotPasswordToken: {
+      type: String,
+    },
+    forgotPasswordExpiry: {
+      type: Date,
+    },
+    refreshToken: {
+      type: String,
+    },
+    emailVerificationToken: {
+      type: String,
+    },
+    emailVerificationExpiry: {
+      type: Date,
     },
   },
   { timestamps: true }
